@@ -207,13 +207,15 @@
     }
 
     // ====== MODULAR INIT ======
+    document.addEventListener("DOMContentLoaded", () => {
+      initDisplay();
+    });
+
     function initDisplay() {
       displayEvents();
       displayStudents(currentPage);
       console.log("✅ JSON Parsed Successfully:", data);
     }
-
-    initDisplay();
   </script>
 </body>
 </html>
